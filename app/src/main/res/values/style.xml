@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button_design" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="cornerRadius">3dp</item>
+        <item name="fontFamily">monospace</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:layout_width">350dp</item>
+    </style>
+  <style name="upload_btn">
+      <item name="android:backgroundTint">@color/tras_text_color</item>
+      <item name="android:layout_width">wrap_content</item>
+      <item name="android:height">55dp</item>
+      <item name="cornerRadius">2dp</item>
+      <item name="android:textColor">@color/application_background</item>
+      <item name="fontFamily">@font/monospacebold</item>
+  </style>
+    <style name="notes_view" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="cornerRadius">3dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="notes_message" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/light_white</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#F3882A</item>
+    </style>
+    <style name="divider_view" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="background">@color/white</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+</resources>

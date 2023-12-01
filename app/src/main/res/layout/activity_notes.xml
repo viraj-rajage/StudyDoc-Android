@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notes"
+    android:background="@color/application_background">
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_button" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="Notes"
+        android:textColor="@color/text_color"
+        android:fontFamily="monospace"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/view7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/hover_color"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        tools:layout_editor_absoluteX="3dp"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Subject:"
+        android:textColor="@color/application_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="64dp"
+        android:layout_marginBottom="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="monospace"
+        android:text="20+"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Total Notes:"
+        android:textColor="@color/application_background"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="130+"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11" />
+
+    <ScrollView
+        android:layout_marginTop="43dp"
+        android:layout_width="409dp"
+        android:layout_height="700dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="DBMS Notes"
+                android:textColor="@android:color/system_accent1_300"
+                android:textSize="18dp"
+                tools:targetApi="s" />
+
+            <Button
+                android:id="@+id/DBMSnote1"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Transaction Processing" />
+
+            <Button
+                android:id="@+id/DBMSnote2"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Relational Data Model" />
+
+            <Button
+                android:id="@+id/DBMSnote3"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="PL/SQL Programming" />
+
+            <View
+                style="@style/divider_view"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="C Language Notes"
+                android:textColor="@android:color/system_accent1_300"
+                android:textSize="18dp"
+                tools:targetApi="s" />
+
+            <Button
+                android:id="@+id/CNotes1"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Basic Of C 1" />
+
+            <Button
+                android:id="@+id/CNotes2"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Basic Of C 2" />
+
+            <Button
+                android:id="@+id/CNotes3"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Arrays and Strings" />
+
+            <Button
+                android:id="@+id/CNotes4"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Functions" />
+
+            <Button
+                android:id="@+id/CNotes5"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Structure and Union" />
+
+            <Button
+                android:id="@+id/CNotes6"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Pointers" />
+
+            <View
+                style="@style/divider_view"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Operating System (OS)"
+                android:textColor="@android:color/system_accent1_300"
+                android:textSize="18dp"
+                tools:targetApi="s" />
+
+            <Button
+                android:id="@+id/OS1"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Overview of Operating System" />
+
+            <Button
+                android:id="@+id/OS2"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Operating System Principles" />
+
+            <Button
+                android:id="@+id/OS3"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Process Management" />
+
+            <Button
+                android:id="@+id/OS4"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="File management" />
+
+            <Button
+                android:id="@+id/OS5"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Memory management" />
+
+            <Button
+                android:id="@+id/OS6"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="CPU Scheduling and Deadlock" />
+
+
+            <View
+                style="@style/divider_view"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Software Engineering Notes"
+                android:textColor="@android:color/system_accent1_300"
+                android:textSize="18dp"
+                tools:targetApi="s" />
+
+            <Button
+                android:id="@+id/se1"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Overview of Software Engineering" />
+
+            <Button
+                android:id="@+id/se2"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Agile Software Methodology" />
+
+            <Button
+                android:id="@+id/se3"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Prescriptive Process Models" />
+
+            <Button
+                android:id="@+id/se4"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Software Engineering Practices" />
+
+            <Button
+                android:id="@+id/se5"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Software modeling" />
+
+            <View
+                style="@style/divider_view"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="JAVA Programming"
+                android:textColor="@android:color/system_accent1_300"
+                android:textSize="18dp"
+                tools:targetApi="s" />
+
+            <Button
+                android:id="@+id/java1"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="DATA TYPE,FLOW CONTROL AND ARRAY" />
+
+            <Button
+                android:id="@+id/java2"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="CLASS,INTERFACES AND PACKAGES" />
+
+            <Button
+                android:id="@+id/java3"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="GENERICS" />
+
+            <Button
+                android:id="@+id/java4"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="LAMBDA EXPRESSION" />
+
+            <Button
+                android:id="@+id/java5"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="COLLECTION FRAMEWORK AND STREAM API" />
+
+
+            <View
+                style="@style/divider_view"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="STQA(Software Testing and Quality Assurance)"
+                android:textColor="@android:color/system_accent1_300"
+                android:textSize="18dp"
+                tools:targetApi="s" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Note:- All 6 chapter Combine into 1 PDF File"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <Button
+                android:id="@+id/stqa1"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Download All 6 Chapter's" />
+
+
+            <View
+                style="@style/divider_view"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Computer network"
+                android:textColor="@android:color/system_accent1_300"
+                android:textSize="18dp"
+                tools:targetApi="s" />
+
+            <Button
+                android:id="@+id/cn1"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="OSI MODEL" />
+
+            <Button
+                android:id="@+id/cn2"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="TCP/IP MODEL" />
+
+            <Button
+                android:id="@+id/cn3"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="IP Addressing" />
+
+            <Button
+                android:id="@+id/cn4"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Network Topology" />
+
+            <Button
+                android:id="@+id/cn5"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Network Devices" />
+
+            <Button
+                android:id="@+id/cn6"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Ethernet, NAT, DHCP" />
+
+            <View
+                style="@style/divider_view"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Microcontroller and embedded systems(8051)"
+                android:textColor="@android:color/system_accent1_300"
+                android:textSize="18dp"
+                tools:targetApi="s" />
+
+            <Button
+                android:id="@+id/mr1"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Input/output pins on the Arduino" />
+
+            <Button
+                android:id="@+id/mr2"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="INTERFACING DC MOTOR TO 8051" />
+
+            <Button
+                android:id="@+id/mr3"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Introduction To 8051" />
+
+            <Button
+                android:id="@+id/mr4"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="instruction set and Programming(8051)" />
+
+            <Button
+                android:id="@+id/mr5"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Timing Diagram and Interrupts" />
+
+            <Button
+                android:id="@+id/mr6"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="QNA Microcontroller(10 IMP Q.)" />
+
+            <View
+                style="@style/divider_view"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Cloud Computing"
+                android:textColor="@android:color/system_accent1_300"
+                android:textSize="18dp"
+                tools:targetApi="s" />
+
+            <Button
+                android:id="@+id/cc1"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Timing Diagram and Interrupts" />
+
+            <Button
+                android:id="@+id/cc2"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Cloud Service Mode" />
+
+            <Button
+                android:id="@+id/cc3"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Cloud Economics and Benefits" />
+
+            <Button
+                android:id="@+id/cc4"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Intro-Virtualization" />
+
+            <Button
+                android:id="@+id/cc5"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Virtualization Types" />
+
+            <Button
+                android:id="@+id/cc6"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Technology Example-Vmware Microsoft Hyper-V KVM Xen" />
+
+            <Button
+                android:id="@+id/cc7"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Disadvantages of virtualization" />
+
+            <Button
+                android:id="@+id/cc8"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Storage in Cloud" />
+
+            <Button
+                android:id="@+id/cc9"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Cloud file systems-GFS and HDFS" />
+
+            <Button
+                android:id="@+id/cc10"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Cloud Deployment Models" />
+
+            <Button
+                android:id="@+id/cc11"
+                style="@style/notes_view"
+                android:backgroundTint="@color/notes_button_color"
+                android:text="Architecture of Cloud computing" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

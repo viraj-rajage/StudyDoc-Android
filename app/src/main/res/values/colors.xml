@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="application_background">#061A40</color>
+    <color name="text_color">#DDE6ED</color>
+    <color name="tranparent_background">#16ADECF1</color>
+    <color name="tras_text_color">#B4F2FA</color>
+    <color name="hover_color">#608CB1F1</color>
+    <color name="hover_view">#DCDCDC</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="light_white">#2DF8F8FF</color>
+    <color name="yellow">#f0e68c</color>
+    <color name="notes_button_color">#2200FFFF</color>
+</resources>
